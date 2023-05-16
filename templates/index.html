@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+  <div class="title">
+    <h1 class="title__code">
+      web brains
+    </h1>
+  </div>
+
+  <div class="console">
+    <h3 class="console__title">WEB BRAINS CONSOLE</h3>
+    <hr class="console__separator">
+    <div class="console__window">
+      <p class="console__log">Retrieving search results...</p>
+      <p class="console__log">1196 matching documents found:</p>
+      <pre class="console__log">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Web Brains",
+        "image": "",
+        "@id": "",
+        "url": "http://webbrains.io/",
+        "telephone": "+61 432580620",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9 Nebbiolo Place",
+          "addressLocality": "Margaret River",
+          "addressRegion": "WA",
+          "postalCode": "6285",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -33.9438661,
+          "longitude": 115.0621755
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "09:00",
+          "closes": "16:00"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "09:00",
+          "closes": "16:00"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "09:00",
+          "closes": "16:00"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "16:00"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }],
+        "sameAs": [
+          "https://www.facebook.com/webbrains.io",
+          "https://www.instagram.com/webbrains.io/",
+          "https://www.linkedin.com/company/web-brains-io/",
+          "http://webbrains.io/"
+        ] 
+      }
+      </pre>
+      <p class="console__log">Found services:</p>
+      <pre class="console__log">
+      SERVICES = [
+        "web design",
+        "logo design",
+        "search engine optimisation"
+      ]
+      </pre>
+      <p class="console__log">1196 matching documents found:</p>
+      <p class="console__log">1196 matching documents found:</p>
+      <p class="console__log">1196 matching documents found:</p>
+      <p class="console__log">1196 matching documents found:</p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div id="content" class="terminal">
+    <p class="terminal__script">.\remote\usr> webbrains run start</p>
+    <p class="terminal__script">Installing packages...</p>
+    <p class="terminal__script">Building site...</p>
+    <p class="terminal__script">> Created pages and SEO goodness.</p>
+    <p class="terminal__script">-> Successfully compiled with 0 errors.</p>
+    <p class="terminal__script"><strong>Done in <span id="randomNumber"></span></strong></p>
+    <p class="terminal__code">Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to begin</p>
+  </div>
+
+  
+</div>
+
+{% endblock content %}
